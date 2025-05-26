@@ -29,5 +29,5 @@ A real-time plant disease detection system using OpenCV and deep learning that i
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/plant-disease-detection.git
+git clone https://github.com/AbuZar-Ansarii/Plant-Disease.git
 cd plant-disease-detection
