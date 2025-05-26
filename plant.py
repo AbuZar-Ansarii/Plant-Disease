@@ -3,10 +3,12 @@ import numpy as np
 from tensorflow.keras.models import load_model
 import os
 import pickle
+from googlesearch import search
+
 
 # Load class names
 try:
-    with open("D:\pandas\class_names (1).pkl", "rb") as f:
+    with open("class_names (1).pkl", "rb") as f:
         class_names = pickle.load(f)
     print(f"Loaded {len(class_names)} class names successfully.")
 except FileNotFoundError:
@@ -87,3 +89,11 @@ while True:
 # Release resources
 cap.release()
 cv2.destroyAllWindows()
+
+query = predicted_class + " plant disease treatment"
+
+# Perform Google search for treatment information
+search_results = search(query, num_results=5)
+print("\nSearch Results for Treatment Information:")
+for result in search_results:
+    print(result)
