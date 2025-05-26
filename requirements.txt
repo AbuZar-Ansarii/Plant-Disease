@@ -1,3 +1,4 @@
 tensorflow
 opencv-python
 pillow
+googlesearch-python
